@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="MainMenuStage" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.MainMenu">
+   <children>
+      <ImageView fx:id="MainMenuBackGroundImage" fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Hardik/Desktop/Docs/Eclipse/PlantVsZombies/src/Images/pvz.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="MainMenuPlayButton" fitHeight="68.0" fitWidth="137.0" layoutX="332.0" layoutY="266.0" onMouseClicked="#HandlePlayEvent" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Hardik/Desktop/Docs/Eclipse/PlantVsZombies/src/Images/PlayButtonAtMainMenu.jpeg" />
+         </image>
+         <effect>
+            <Blend />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="MainMenuHelp" fitHeight="83.0" fitWidth="66.0" layoutX="702.0" layoutY="518.0" onMouseClicked="#HandleHelpEvent" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Hardik/Desktop/Docs/Eclipse/PlantVsZombies/src/Images/Help_Button.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="MainMenuExit" fitHeight="100.0" fitWidth="110.0" layoutX="14.0" layoutY="493.0" onMouseClicked="#HandleExitEvent" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Hardik/Desktop/Docs/Eclipse/PlantVsZombies/src/Images/exitGame.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="EditProfileImage" fitHeight="44.0" fitWidth="206.0" layoutX="22.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Hardik/Desktop/Docs/Eclipse/PlantVsZombies/src/Images/WelcomeBoard.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="UserNameLabel" alignment="CENTER" layoutX="56.0" layoutY="143.0" prefHeight="20.0" prefWidth="135.0" text="Nandesh" textFill="WHITE" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="300.0" layoutY="377.0" onMouseClicked="#selectLevelEvent" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Hardik/Desktop/Docs/Eclipse/PVZ/src/Images/selectLevel.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

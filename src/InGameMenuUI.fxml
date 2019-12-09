@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.MainMenu">
+	<children>
+		<ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="file:/C:/Users/Hardik/Desktop/Docs/Eclipse/PlantVsZombies/src/Images/InGameMenuBackground.jpg" />
+			</image>
+		</ImageView>
+		<Button layoutX="316.0" layoutY="268.0" mnemonicParsing="false" onMouseClicked="#restartLevel" prefHeight="65.0" prefWidth="169.0" text="Restart Level">
+			<font>
+				<Font name="System Bold" size="18.0" />
+			</font>
+		</Button>
+		<Button layoutX="316.0" layoutY="148.0" mnemonicParsing="false" onMouseClicked="#ResumeGame" prefHeight="65.0" prefWidth="169.0" text="Resume Game">
+			<font>
+				<Font name="System Bold" size="18.0" />
+			</font>
+		</Button>
+		<Button layoutX="316.0" layoutY="383.0" mnemonicParsing="false" onMouseClicked="#SaveAndExit" prefHeight="65.0" prefWidth="169.0" text="Save &amp; Exit">
+			<font>
+				<Font name="System Bold" size="18.0" />
+			</font>
+		</Button>
+	</children>
+</AnchorPane>

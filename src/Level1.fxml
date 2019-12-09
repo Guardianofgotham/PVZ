@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" onMouseMoved="#UpdateSun" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.MainMenu">
+   <children>
+      <ImageView fx:id="BackYardimg" fitWidth="1000.0" onMouseClicked="#BackGroundClickHandler" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Hardik/Desktop/Docs/Eclipse/PlantVsZombies/src/Images/Backyard.jpg" />
+         </image>
+      </ImageView>
+      <VBox fx:id="PlantsSelectorContainer" layoutX="14.0" layoutY="14.0" prefHeight="172.0" prefWidth="100.0">
+         <children>
+            <ImageView fx:id="Peashooter" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#PeashooterEvent" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/Hardik/Desktop/Docs/Eclipse/PlantVsZombies/src/Images/peashooter.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Sunflower" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#SunflowerEvent" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="file:/C:/Users/Hardik/Desktop/Docs/Eclipse/PVZ/src/Images/sunflower.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Wallnut" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#WallnutEvent" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="file:/C:/Users/Hardik/Desktop/Docs/Eclipse/PVZ/src/Images/wallnut.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Jalpeno" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#JalpenoEvent" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="file:/C:/Users/Hardik/Desktop/Docs/Eclipse/PVZ/src/Images/JalapenoSeedPacket.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Frozenpea" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#FrozenPeaEvent" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="file:/C:/Users/Hardik/Desktop/Docs/Eclipse/PVZ/src/Images/freezePeaShooter.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+      <GridPane fx:id="LawnGridPane" gridLinesVisible="false" layoutX="166.0" layoutY="76.0" prefHeight="500.0" prefWidth="817.0" AnchorPane.leftAnchor="166.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="130.0" minHeight="10.0" prefHeight="98.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="238.0" minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="211.0" minHeight="10.0" prefHeight="102.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="144.0" minHeight="3.0" prefHeight="94.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="102.0" minHeight="10.0" prefHeight="102.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <StackPane fx:id="R3C3" onMouseClicked="#ClickedOnLawnHandler" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <StackPane fx:id="R1C1" onMouseClicked="#ClickedOnLawnHandler" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" />
+            <StackPane fx:id="R2C1" onMouseClicked="#ClickedOnLawnHandler" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <StackPane fx:id="R3C1" onMouseClicked="#ClickedOnLawnHandler" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <StackPane fx:id="R4C1" onMouseClicked="#ClickedOnLawnHandler" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <StackPane fx:id="R5C1" onMouseClicked="#ClickedOnLawnHandler" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <StackPane fx:id="R1C2" onMouseClicked="#ClickedOnLawnHandler" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2" />
+            <StackPane fx:id="R2C2" onMouseClicked="#ClickedOnLawnHandler" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <StackPane fx:id="R3C2" onMouseClicked="#ClickedOnLawnHandler" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <StackPane fx:id="R5C2" onMouseClicked="#ClickedOnLawnHandler" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <StackPane fx:id="R4C2" onMouseClicked="#ClickedOnLawnHandler" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <StackPane fx:id="R1C3" onMouseClicked="#ClickedOnLawnHandler" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3" />
+            <StackPane fx:id="R2C3" onMouseClicked="#ClickedOnLawnHandler" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <StackPane fx:id="R4C3" onMouseClicked="#ClickedOnLawnHandler" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <StackPane fx:id="R5C3" onMouseClicked="#ClickedOnLawnHandler" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <StackPane fx:id="R1C4" onMouseClicked="#ClickedOnLawnHandler" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="4" />
+            <StackPane fx:id="R2C4" onMouseClicked="#ClickedOnLawnHandler" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <StackPane fx:id="R3C4" onMouseClicked="#ClickedOnLawnHandler" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <StackPane fx:id="R4C4" onMouseClicked="#ClickedOnLawnHandler" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <StackPane fx:id="R5C4" onMouseClicked="#ClickedOnLawnHandler" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <StackPane fx:id="R1C5" onMouseClicked="#ClickedOnLawnHandler" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="5" />
+            <StackPane fx:id="R2C5" onMouseClicked="#ClickedOnLawnHandler" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+            <StackPane fx:id="R3C5" onMouseClicked="#ClickedOnLawnHandler" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <StackPane fx:id="R4C5" onMouseClicked="#ClickedOnLawnHandler" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+            <StackPane fx:id="R5C5" onMouseClicked="#ClickedOnLawnHandler" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+            <StackPane fx:id="R1C6" onMouseClicked="#ClickedOnLawnHandler" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="6" />
+            <StackPane fx:id="R2C6" onMouseClicked="#ClickedOnLawnHandler" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+            <StackPane fx:id="R3C6" onMouseClicked="#ClickedOnLawnHandler" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+            <StackPane fx:id="R4C6" onMouseClicked="#ClickedOnLawnHandler" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+            <StackPane fx:id="R5C6" onMouseClicked="#ClickedOnLawnHandler" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+            <StackPane fx:id="R1C7" onMouseClicked="#ClickedOnLawnHandler" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="7" />
+            <StackPane fx:id="R2C7" onMouseClicked="#ClickedOnLawnHandler" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+            <StackPane fx:id="R3C7" onMouseClicked="#ClickedOnLawnHandler" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+            <StackPane fx:id="R4C7" onMouseClicked="#ClickedOnLawnHandler" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+            <StackPane fx:id="R5C7" onMouseClicked="#ClickedOnLawnHandler" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="4" />
+            <StackPane fx:id="R1C8" onMouseClicked="#ClickedOnLawnHandler" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="8" />
+            <StackPane fx:id="R2C8" onMouseClicked="#ClickedOnLawnHandler" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+            <StackPane fx:id="R3C8" onMouseClicked="#ClickedOnLawnHandler" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.rowIndex="2" />
+            <StackPane fx:id="R4C8" onMouseClicked="#ClickedOnLawnHandler" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.rowIndex="3" />
+            <StackPane fx:id="R5C8" onMouseClicked="#ClickedOnLawnHandler" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.rowIndex="4" />
+            <StackPane fx:id="R1C9" onMouseClicked="#ClickedOnLawnHandler" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="9" />
+            <StackPane fx:id="R2C9" onMouseClicked="#ClickedOnLawnHandler" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="9" GridPane.rowIndex="1" />
+            <StackPane fx:id="R3C9" onMouseClicked="#ClickedOnLawnHandler" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="9" GridPane.rowIndex="2" />
+            <StackPane fx:id="R4C9" onMouseClicked="#ClickedOnLawnHandler" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="9" GridPane.rowIndex="3" />
+            <StackPane fx:id="R5C9" onMouseClicked="#ClickedOnLawnHandler" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="9" GridPane.rowIndex="4" />
+            <StackPane fx:id="L1" prefHeight="99.0" prefWidth="81.0">
+               <children>
+                  <ImageView fx:id="LM1" fitHeight="98.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/C:/Users/Hardik/Desktop/Docs/Eclipse/PlantVsZombies/src/Images/lawnMower.gif" />
+                     </image>
+                  </ImageView>
+               </children>
+            </StackPane>
+            <StackPane fx:id="L2" prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="1">
+               <children>
+                  <ImageView fx:id="LM2" fitHeight="110.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/C:/Users/Hardik/Desktop/Docs/Eclipse/PlantVsZombies/src/Images/lawnMower.gif" />
+                     </image>
+                  </ImageView>
+               </children>
+            </StackPane>
+            <StackPane fx:id="L3" prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="2">
+               <children>
+                  <ImageView fx:id="LM3" fitHeight="106.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/C:/Users/Hardik/Desktop/Docs/Eclipse/PlantVsZombies/src/Images/lawnMower.gif" />
+                     </image>
+                  </ImageView>
+               </children>
+            </StackPane>
+            <StackPane fx:id="L4" prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="3">
+               <children>
+                  <ImageView fx:id="LM4" fitHeight="99.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/C:/Users/Hardik/Desktop/Docs/Eclipse/PlantVsZombies/src/Images/lawnMower.gif" />
+                     </image>
+                  </ImageView>
+               </children>
+            </StackPane>
+            <StackPane fx:id="L5" prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="4">
+               <children>
+                  <ImageView fx:id="LM5" fitHeight="120.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/C:/Users/Hardik/Desktop/Docs/Eclipse/PlantVsZombies/src/Images/lawnMower.gif" />
+                     </image>
+                  </ImageView>
+               </children>
+            </StackPane>
+         </children>
+      </GridPane>
+      <ImageView fx:id="Shovelimg" fitHeight="81.0" fitWidth="60.0" layoutX="349.0" layoutY="-8.0" onMouseClicked="#ShovelClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Hardik/Desktop/Docs/Eclipse/PlantVsZombies/src/Images/Shovel.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="SunImg" fitHeight="64.0" fitWidth="60.0" layoutX="196.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Hardik/Desktop/Docs/Eclipse/PlantVsZombies/src/Images/CollectedSun.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="CollectedSunLabel" layoutX="218.0" layoutY="44.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="MenuButtonimg" fitHeight="33.0" fitWidth="172.0" layoutX="871.0" layoutY="-2.0" onMouseClicked="#inGameMenuHandler" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Hardik/Desktop/Docs/Eclipse/PlantVsZombies/src/Images/IngameMenuButton.jpg" />
+         </image>
+      </ImageView>
+      <ProgressBar fx:id="progressBar" layoutX="648.0" prefWidth="200.0" progress="0.0" />
+   </children>
+</AnchorPane>
