@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.MainMenu">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Hardik/Desktop/Docs/Eclipse/PVZ/src/Images/Black.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="599.0" fitWidth="800.0" layoutX="95.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Hardik/Desktop/Docs/Eclipse/PVZ/src/Images/Lose.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="exiitMainMenu" fitHeight="54.0" fitWidth="172.0" layoutX="212.0" layoutY="537.0" onMouseClicked="#ReturnToMainMenu" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="retry" fitHeight="54.0" fitWidth="125.0" layoutX="453.0" layoutY="538.0" onMouseClicked="#retryLevel" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
